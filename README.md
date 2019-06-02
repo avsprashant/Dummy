@@ -29,12 +29,17 @@ Deployment kind object from helloworld-db.yml which is our app layer and
 
 Service kind object from helloworld-db-service.yml generic object exposing above Deployment object.
 
-Verification of deployed services:
+# Verification of deployed services:
 kubectl get service   # check services which get created instantly
+
 kubectl get pods      # check pods status, they will take sometime as they have to pull image and deploy
+
 kubectl describe deployment <helloworld-deployment-randomString>  # We have defined 2 replicas, describe for one of the deployment.
+
 kubectl logs <helloworld-deployment-randomString>   # view our NodeJs app prints logs here
+
 minikube service helloworld-db-service --url    # we get a localhost:Nodeport
+
 curl <URL>  # curl should be installed, else try to do telnet and port
 
 ## This should give hello world and visitor count. Our App is accessible from Node.
