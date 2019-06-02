@@ -42,7 +42,7 @@ minikube service helloworld-db-service --url    # we get a end point as url
 
 curl <URL>  # curl should be installed, else try to do telnet and port
 
-## This should give hello world and visitor count. Our App is accessible from Node.
+## This should give hello world and visitor count. Our App is accessible from outside cluster i.e HOST.
 
 Verification of App and DB authentication:
 1)
