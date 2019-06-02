@@ -19,7 +19,7 @@ con.connect(function(err){
 // Request handling
 app.get('/', function (req, res) {
   // create table if not exist
-  con.query('INSERT INTO visits (ts) values (?)', Date.now(),function(err, dbRes) {
+  con.query('INSERT INTO guests (ts) values (?)', Date.now(),function(err, dbRes) {
     if(err) throw err;
     res.send('Hey There! You are visitor number '+dbRes.insertId);
   });
