@@ -1,5 +1,5 @@
 # Dummy
-This is a sample NodeJS app which prints hey there and inserts a value in DB.
+This is a sample NodeJS app which prints Hey There and inserts a value in DB.
 
 Pre-req:
 Docker image built and pushed to avsprashant/nodeapp repo. Application file is index.js only.
