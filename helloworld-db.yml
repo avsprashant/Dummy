@@ -11,8 +11,7 @@ spec:
     spec:
       containers:
       - name: k8s-demo
-        image: wardviaene/k8s-demo
-        command: ["node", "index-db.js"]
+        image: avsprashant/nodeapp
         ports:
         - name: nodejs-port
           containerPort: 3000
