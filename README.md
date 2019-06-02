@@ -52,6 +52,7 @@ In mysql prompt, enter
 show databases;
 use helloworld;       #helloworld is our DB
 select * from views;  #views is our table, you should see some data.
+
 2)
 
 du -s /mnt/data/    # make a note of DB space utilized
