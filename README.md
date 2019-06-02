@@ -2,6 +2,7 @@
 This is a sample NodeJS app which prints hello world and inserts a value in DB.
 
 Pre-req:
+Docker image built and pushed to avsprashant/nodeapp repo. Application file is index.js only.
 minikube start # start cluster first
 
 Deployment Steps:
