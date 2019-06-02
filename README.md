@@ -65,9 +65,9 @@ CREATE TABLE Persons (
 );
 insert into Persons(PersonID) values(100); # Add some sample data and again check DB space utilized
 
-## Data is getting stored in /var/lib/mysql which is inturn mounted at /mnt/data/
-
-Verification of Data persistence @ /mnt/data/ in Host:
+# Verification of Data persistence @ /mnt/data/ in Host:
 kubectl exec database -- touch /var/lib/mysql/abc.txt # create a file in DB pod
+
 ls -l /mnt/data/abc.txt # access it on HOST @ /mnt/data/
 
+Data is getting stored in /var/lib/mysql which is inturn mounted at /mnt/data/
