@@ -51,7 +51,7 @@ kubectl exec database -it -- mysql -u root -p     # give password - "rootpasswor
 In mysql prompt, enter 
 show databases;
 use helloworld;       #helloworld is our DB
-select * from views;  #views is our table, you should see some data.
+select * from guests;  #guests is our table, you should see some data.
 
 2)
 
