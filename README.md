@@ -2,7 +2,7 @@
 This is a sample NodeJS app which prints Hey There and inserts a value in DB.
 
 Pre-req:
-Docker image built and pushed to avsprashant/nodeapp repo. Application file is index.js only.
+Docker image built and pushed to avsprashant/nodeapp repo. Application file is index.js and index-db.js
 minikube start # start cluster first
 
 Deployment Steps:
