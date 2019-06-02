@@ -16,11 +16,17 @@ cd Dummy/
 sh startUpScript.sh 
 # This will create all objects in this order :
 Secret kind object from secrets.yml stores base 64 encrypted DB passwords, 
+
 PersistentVolume kind object from  mysql-pv.yaml which creates a 20GB volume block at /mnt/data/
+
 PersistentVolumeClaim kind object from  mysql-pv.yaml defines a volume mount for /var/lib/mysql at above volume,
+
 Pod kind object from database.yml creates a DB from this mysql:5.7 image,
+
 Service kind object from database-service.yml exposes above POD,
+
 Deployment kind object from helloworld-db.yml which is our app layer and 
+
 Service kind object from helloworld-db-service.yml generic object exposing above Deployment object.
 
 Verification of deployed services:
