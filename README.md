@@ -38,7 +38,7 @@ kubectl describe deployment <helloworld-deployment-randomString>  # We have defi
 
 kubectl logs <helloworld-deployment-randomString>   # view our NodeJs app prints logs here
 
-minikube service helloworld-db-service --url    # we get a localhost:Nodeport
+minikube service helloworld-db-service --url    # we get a end point as url
 
 curl <URL>  # curl should be installed, else try to do telnet and port
 
