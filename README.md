@@ -44,14 +44,16 @@ curl <URL>  # curl should be installed, else try to do telnet and port
 
 ## This should give hello world and visitor count. Our App is accessible from outside cluster i.e HOST.
 
-Verification of App and DB authentication:
+# Verification of App and DB authentication:
 1)
+
 kubectl exec database -it -- mysql -u root -p     # give password - "rootpassword"
-# In mysql prompt, enter 
+In mysql prompt, enter 
 show databases;
 use helloworld;       #helloworld is our DB
 select * from views;  #views is our table, you should see some data.
 2)
+
 du -s /mnt/data/    # make a note of DB space utilized
 CREATE TABLE Persons (
     PersonID int,
