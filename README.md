@@ -6,8 +6,11 @@ Docker image built and pushed to avsprashant/nodeapp repo. Application file is i
 minikube start # start cluster first
 
 Deployment Steps:
+
 mkdir WORKDIR && cd WORKDIR; 
+
 git clone https://github.com/avsprashant/Dummy.git    # clone my repo
+
 cd Dummy/
 
 sh startUpScript.sh 
