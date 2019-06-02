@@ -1,5 +1,5 @@
 # Dummy
-This is a sample NodeJS app which prints hello world and inserts a value in DB.
+This is a sample NodeJS app which prints hey there and inserts a value in DB.
 
 Pre-req:
 Docker image built and pushed to avsprashant/nodeapp repo. Application file is index.js only.
@@ -42,7 +42,7 @@ minikube service helloworld-db-service --url    # we get a end point as url
 
 curl <URL>  # curl should be installed, else try to do telnet and port
 
-## This should give hello world and visitor count. Our App is accessible from outside cluster i.e HOST.
+## This should give hey there and visitor count. Our App is accessible from outside cluster i.e HOST.
 
 # Verification of App and DB authentication:
 1)
