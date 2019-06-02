@@ -52,4 +52,3 @@ insert into Persons(PersonID) values(100); # Add some sample data and again chec
 Verification of Data persistence @ /mnt/data/ in Host:
 kubectl exec database -- touch /var/lib/mysql/abc.txt # create a file in DB pod
 ls -l /mnt/data/abc.txt # access it on HOST @ /mnt/data/
-
