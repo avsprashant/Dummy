@@ -1,5 +1,6 @@
 # Dummy
-This is a sample NodeJS app which prints Hey There and inserts a value in DB.
+This is a sample NodeJS app which prints Hey There and inserts a value in DB. This is just a POC for dev environment 
+# NOT for Prod.
 
 Pre-req:
 Docker image built and pushed to avsprashant/nodeapp repo. Application file is index.js and index-db.js
@@ -14,7 +15,7 @@ git clone https://github.com/avsprashant/Dummy.git    # clone my repo
 cd Dummy/
 
 sh startUpScript.sh 
-# This will create all objects in this order :
+# This script will create all objects in this order :
 Secret kind object from secrets.yml stores base 64 encrypted DB passwords, 
 
 PersistentVolume kind object from  mysql-pv.yaml which creates a 20GB volume block at /mnt/data/
